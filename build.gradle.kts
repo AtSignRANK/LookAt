@@ -8,8 +8,15 @@ group = properties["group"]!!
 version = properties["version"]!!
 
 repositories {
-    jcenter()
+    mavenCentral()
+    maven("https://papermc.io/repo/repository/maven-public/")
     maven("https://jitpack.io")
+}
+
+dependencies {
+    implementation(kotlin("stdlib"))
+
+    compileOnly("io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT")
 }
 
 val shade = configurations.create("shade")
