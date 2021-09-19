@@ -29,7 +29,7 @@ tasks {
     }
 
     compileKotlin {
-        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.jvmTarget = "16"
     }
 
     create<Jar>("sourceJar") {
